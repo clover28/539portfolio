@@ -1,0 +1,55 @@
+.responsive {
+    width: 90%;
+    margin: auto;
+    padding: 6px;
+    float: left;
+}
+
+/*Could be merged with h2*/
+#para2 {
+    margin: 20px 10px 0;
+    padding-top: 30px;
+}
+
+div.img img {
+    width: 100%;
+    height: 100px;
+    vertical-align: text-bottom;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 500px) {
+
+    .responsive {
+        width: 49.9999%;
+        margin: auto;
+        padding: 10px;
+        float: left;
+    }
+
+    div.img img {
+        width: 100%;
+        height: 250px;
+        vertical-align: text-bottom;
+        object-fit: cover;
+    }
+
+    #para1 {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+
+    .responsive {
+        float: left;
+        width: 24.99999%;
+    }
+
+    div.img img {
+        width: 100%;
+        height: 250px;
+        vertical-align: text-bottom;
+        object-fit: cover;
+    }
+}

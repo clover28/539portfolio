@@ -1,0 +1,53 @@
+application: sarim28project1
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /style_sheets
+  static_dir: style_sheets
+
+- url: /resume1130\.pdf
+  static_files: resume1130.pdf
+  upload: resume1130\.pdf
+
+- url: /images
+  static_dir: images
+
+- url: /js
+  static_dir: js
+
+- url: /Dragon
+  script: main.app
+
+- url: /Haley
+  script: main.app
+
+- url: /SI501
+  script: main.app
+
+- url: /designJams
+  script: main.app
+
+- url: /work
+  script: main.app
+
+- url: /gallery
+  script: main.app
+
+- url: /
+  script: main.app
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+- name: jinja2
+  version: latest

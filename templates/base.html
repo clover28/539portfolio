@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wei's Portfolio</title>
+  {{style}}
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width; initial-scale=1.0;' />
+</head>
+<body>
+
+  <header>
+      <a href="/"
+      {% if name == "index" %}
+          class = "current"
+          {% endif %}
+      >
+        <img src="images/logo.png" alt="Wei's personal logo and link to homepage">
+      </a>
+    <nav>
+      <!-- <a href="/work"
+      {% if name == "work" %}
+          class = "current"
+          {% endif %}
+      >Work</a> -->
+      <a href="/gallery"
+      {% if name == "gallery" %}
+          class = "current"
+          {% endif %}
+      >Gallery</a>
+      <a href="resume1130.pdf"
+      {% if name == "resume" %}
+          class = "current"
+          {% endif %}
+      >Resume</a>
+    </nav>
+  </header>
+
+    {% block content %}
+      You should never see this!!
+    {% endblock %}
+
+  <footer>
+    <div class="footerlinks">
+      <a href="mailto:caiw28@gmail.com" target="_top"><img src="images/noun_621698_cc.png" alt="send me an email"><span class="sr-only">Email</span></a>
+      <a href="https://www.instagram.com/truetigercw/" target="_blank"><img src="images/glyph-logo_May2016.png" alt="go to my Instagram"><span class="sr-only">Instagram</span></a>
+    </div>
+    <p>&copy; 2016 by Wei Cai </p>
+  </footer>
+  {{script}}
+</body>
+</html>
