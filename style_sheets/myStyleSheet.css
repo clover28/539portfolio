@@ -81,9 +81,9 @@ nav a {
 
 #intro {
 	text-align: center;
-    font-size: 2em;
+    font-size: 1em;
     margin: 0;
-    padding: 30px 0 15px;
+    padding-top: 30px;
 /*    line-height: 50%;*/
 }
 
@@ -216,7 +216,7 @@ div.desc {
 
 .paragraph p {
 	font-size: 1em;
-	font-family: Century, "Times New Roman", Helvetica, Arial, serif;
+	font-family: Helvetica, Arial, serif;
 	font-weight: normal;
 /*	margin: 0px 5px 15px;*/
 }
@@ -243,6 +243,13 @@ div.desc {
     font-family: Helvetica, Arial, sans-serif;
     padding: 10px 10px;
     border: ridge 1px;
+}
+
+.video {
+	display: block;
+	width: 300px;
+	height: 200px;
+	margin: 15px auto 0;
 }
 
 /*footer*/
@@ -290,6 +297,9 @@ footer p {
     padding-top: 30px;
 }
 
+.gallery {
+	margin:20px auto;
+}
 
 @media only screen and (min-width: 500px) {
 	header img {
@@ -308,6 +318,10 @@ footer p {
 		text-decoration: none;
 	}
 
+	nav a:hover {
+		color: #FF046E;
+	}
+
 	.current {
 	    line-height: 40px;
 	}
@@ -318,10 +332,10 @@ footer p {
 
 	#intro {
 		text-align: center;
-	    font-size: 2em;
+	    font-size: 1.5em;
 	    margin: 0;
 	    padding: 0;
-	    line-height: 50%;
+	    line-height: 30%;
 	}
 
 	#centeredAbsolute {
@@ -339,6 +353,11 @@ footer p {
 	h2{
 		font-size: 1.5em;
 		font-weight: normal;
+	}
+
+	h3 {
+		font-weight: normal;
+		color: #FF046E;
 	}
 
 	.cimage {
@@ -361,17 +380,8 @@ footer p {
         text-align: center;
     }
 
-/*    .top {
-        margin: 10px 20px;
-        padding-bottom: 10px;
-    }*/
-
     .summary {
     	display: block;
-/*        display: inline-block;
-        width: 33%;
-        float: left;
-        padding: 20px;*/
     }
 
     .paragraph a {
@@ -396,6 +406,13 @@ footer p {
     #dragonb {
     	margin-top: 30px;
     }
+
+    .video {
+		display: block;
+		width: 560px;
+		height: 315px;
+		margin: 30px auto 0;
+	}
 
     footer {
     	font-size: 1em;
@@ -452,9 +469,9 @@ footer p {
 		margin-top: 20px;
 	}
 
-/*	h2 {
-		font-size: 2em;
-	}*/
+	.holder a .text {
+		font-size: 3.2em;
+	}
 
 	.responsive {
 	    float: left;

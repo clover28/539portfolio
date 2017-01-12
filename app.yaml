@@ -12,9 +12,9 @@ handlers:
 - url: /style_sheets
   static_dir: style_sheets
 
-- url: /resume0101\.pdf
-  static_files: resume0101.pdf
-  upload: resume0101\.pdf
+- url: /resume0112_Helvetica6\.pdf
+  static_files: resume0112_Helvetica6.pdf
+  upload: resume0112_Helvetica6\.pdf
 
 - url: /images
   static_dir: images
