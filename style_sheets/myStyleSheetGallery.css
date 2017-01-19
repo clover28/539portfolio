@@ -18,6 +18,11 @@ div.img img {
     object-fit: cover;
 }
 
+.video {
+    display: block;
+    margin: 15px auto 0;
+}
+
 @media only screen and (min-width: 500px) {
 
     .responsive {
@@ -36,6 +41,13 @@ div.img img {
 
     #para1 {
         padding-top: 30px;
+    }
+
+    .video {
+        display: block;
+        width: 560px;
+        height: 315px;
+        margin: 30px auto 0;
     }
 }
 

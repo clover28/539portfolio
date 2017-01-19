@@ -12,15 +12,18 @@ handlers:
 - url: /style_sheets
   static_dir: style_sheets
 
-- url: /resume0112_Helvetica6\.pdf
-  static_files: resume0112_Helvetica6.pdf
-  upload: resume0112_Helvetica6\.pdf
+- url: /resume0117_designer\.pdf
+  static_files: resume0117_designer.pdf
+  upload: resume0117_designer\.pdf
 
 - url: /images
   static_dir: images
 
 - url: /js
   static_dir: js
+
+- url: /node_modules
+  static_dir: node_modules
 
 - url: /Dragon
   script: main.app

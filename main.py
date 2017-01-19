@@ -23,8 +23,8 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\">"
-        script = ""
+        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" href=\"style_sheets/style.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><script src=\"js/modernizr.js\"></script>"
+        script = "<script src=\"js/jquery-2.1.1.js\"></script><script src=\"js/jquery.mixitup.min.js\"></script><script src=\"js/main.js\"></script>"
         template_vars = {
             'style': style,
             'script': script,
@@ -59,7 +59,7 @@ class galleryHandler(webapp2.RequestHandler):
 
 class DragonHandler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\">"
+        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
         script = ""
         template_vars = {
             'style': style,
@@ -71,7 +71,7 @@ class DragonHandler(webapp2.RequestHandler):
 
 class HaleyHandler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\">"
+        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
         script = ""
         template_vars = {
             'style': style,
@@ -83,7 +83,7 @@ class HaleyHandler(webapp2.RequestHandler):
 
 class SI501Handler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\">"
+        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
         script = ""
         template_vars = {
             'style': style,
@@ -93,9 +93,33 @@ class SI501Handler(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('501.html')
         self.response.out.write(template.render(template_vars))
 
+class APIHandler(webapp2.RequestHandler):
+    def get(self):
+        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
+        script = ""
+        template_vars = {
+            'style': style,
+            'script': script,
+            'name':'work'
+        }
+        template = JINJA_ENVIRONMENT.get_template('APIMashup.html')
+        self.response.out.write(template.render(template_vars))
+
+class beautyHandler(webapp2.RequestHandler):
+    def get(self):
+        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheetGallery.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
+        script = ""
+        template_vars = {
+            'style': style,
+            'script': script,
+            'name':'work'
+        }
+        template = JINJA_ENVIRONMENT.get_template('beautyOrganizer.html')
+        self.response.out.write(template.render(template_vars))
+
 class designJamsHandler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\">"
+        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
         script = ""
         template_vars = {
             'style': style,
@@ -113,6 +137,8 @@ app = webapp2.WSGIApplication([
     ('/Dragon', DragonHandler),
     ('/Haley', HaleyHandler),
     ('/SI501', SI501Handler),
+    ('/API', APIHandler),
+    ('/beauty', beautyHandler),
     ('/designJams', designJamsHandler),
     ('.*', MainHandler)
 ], debug=True)

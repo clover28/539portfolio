@@ -4,49 +4,84 @@
 		<div>
 			<div id = "centeredAbsolute">
 				<p id = "intro">I'm Wei Cai,</p>
-				<p>An aspiring UXer.</p>
+				<p>An aspiring UX/Product designer.</p>
 			</div>
 		</div>
 	</section>
 
-	<section class="work">
-	<h1>Recent Projects</h1>
-	<div class="responsive">
-	  <div class="holder img">
-	    <a href="/SI501">
-	      <img class="image" src="images/Washtenaw.png" alt="link to Washtenaw Community College project" width="600" height="400">
-	      <div class="text">Bailey Library</div>
-	    </a>
-	  </div>
-	</div>
+<main class="cd-main-content" id="projects">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder"> 
+						<a data-type="all" href="#0">All</a> <!-- selected on mobile -->
+					</li> 
+					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+					<li class="filter" data-filter=".design"><a href="#0" data-type="design">Design</a></li>
+					<li class="filter" data-filter=".research"><a href="#0" data-type="research">Research</a></li>
+					<li class="filter" data-filter=".code"><a href="#0" data-type="code">Code</a></li>
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
 
-	<div class="responsive">
-	  <div class="holder img">
-	    <a href="/Haley">
-	      <img src="images/Artboard2.png" alt="link to the Haley Tricycle project" width="600" height="400">
-	      <div class="text">Haley Tricycles</div>
-	    </a>
-	  </div>
-	</div>
+		<section class="cd-gallery">
+			<ul>
+	  			<li class="mix research">
+					<div class="holder img">
+		    		<a href="/SI501">
+		      			<img class="image" src="images/Washtenaw.png" alt="link to Washtenaw Community College project" width="600" height="400">
+		      			<div class="text">Bailey Library</div>
+		    		</a>
+		  			</div>
+	  			</li>
 
-	<div class="responsive">
-	  <div class="holder img">
-	    <a href="/Dragon">
-	      <img src="images/Artboard3.png" alt="link to the Dragon Scroll project" width="600" height="400">
-	      <div class="text">The Dragon Scrolls</div>
-	    </a>
-	  </div>
-	</div>
+	  			<li class="mix code">
+					<div class="holder img">
+		    		<a href="/API">
+		      			<img class="image" src="images/APIMash.png" alt="link to API Mashup project" width="600" height="400">
+		      			<div class="text">API Mashup</div>
+		    		</a>
+		  			</div>
+	  			</li>
 
-	<div class="responsive">
-	  <div class="holder img">
-	    <a href="/designJams">
-	      <img src="images/nutanix1Index.png" alt="link to design jams" width="300" height="200">
-	      <div class="text">Design Jams</div>
-	    </a>
-	  </div>
-	</div>
+				<li class="mix research design">
+					<div class="holder img">
+	    			<a href="/Haley">
+	      				<img src="images/Artboard2.png" alt="link to the Haley Tricycle project" width="600" height="400">
+	      				<div class="text">Haley Tricycles</div>
+	    			</a>
+	  				</div>
+				</li>
+				<li class="mix design">
+					<div class="holder img">
+	    			<a href="/Dragon">
+	      				<img src="images/Artboard3.png" alt="link to the Dragon Scroll project" width="600" height="400">
+	      				<div class="text">The Dragon Scrolls</div>
+	    			</a>
+	  				</div>
+				</li>
+				<li class="mix design">
+					<div class="holder img">
+	    			<a href="/designJams">
+				      	<img src="images/nutanix1Index.png" alt="link to design jams" width="300" height="200">
+				      	<div class="text">Design Jams</div>
+				    </a>
+	  				</div>
+				</li>
+				<li class="mix research design">
+					<div class="holder img">
+	    			<a href="/beauty">
+				      	<img src="images/lipstick.png" alt="link to Beauty Organizer App" width="300" height="200">
+				      	<div class="text">Beauty Organizer (Ongoing)</div>
+				    </a>
+	  				</div>
+				</li>
 
-	<div class="clearfix"></div>
-	</section>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+		</section> <!-- cd-gallery -->
+
+	</main> <!-- cd-main-content -->
 	{% endblock %}
