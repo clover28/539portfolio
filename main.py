@@ -117,6 +117,19 @@ class beautyHandler(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('beautyOrganizer.html')
         self.response.out.write(template.render(template_vars))
 
+class HyechoHandler(webapp2.RequestHandler):
+    def get(self):
+        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheetGallery.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
+        script = ""
+        template_vars = {
+            'style': style,
+            'script': script,
+            'name':'work'
+        }
+        template = JINJA_ENVIRONMENT.get_template('Hyecho.html')
+        self.response.out.write(template.render(template_vars))
+
+
 class designJamsHandler(webapp2.RequestHandler):
     def get(self):
         style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
@@ -139,6 +152,7 @@ app = webapp2.WSGIApplication([
     ('/SI501', SI501Handler),
     ('/API', APIHandler),
     ('/beauty', beautyHandler),
+    ('/Hyecho', HyechoHandler),
     ('/designJams', designJamsHandler),
     ('.*', MainHandler)
 ], debug=True)

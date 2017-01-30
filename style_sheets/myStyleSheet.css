@@ -5,7 +5,7 @@ html,body {
 }
 
 body {
-	font-family: Helvetica,Arial,sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial ,sans-serif;
 	color: Black;
 	font-weight: bold;
 }
@@ -52,12 +52,12 @@ nav a {
 }
 
 nav a:hover {
-	color: #FF046E;
+	color: #dc267f;
 	}
 
 /*Highlight current page*/
 .current {
-	color: #FF046E;
+	color: #dc267f;
 	border-bottom: solid 1.5px;
 	line-height: 20px;
 }
@@ -132,7 +132,7 @@ h2 {
 h3 {
 	font-size: 1em;
 	font-weight: medium;
-	color: #FF046E;
+	color: #dc267f;
 }
 
 div.img {
@@ -140,8 +140,9 @@ div.img {
     box-shadow: none;
 }
 
-div.img:hover {
+div.overflow:hover {
     border: none;
+    box-shadow: 8px 8px black;  
 }
 
 div.img:hover .image {
@@ -154,9 +155,13 @@ div.img:hover .text {
 
 div.img img {
     width: 100%;
-    height: auto;
     vertical-align: text-bottom;
     position: relative;
+    overflow: hidden;
+}
+
+div.overflow img {
+    height: 300px;
 }
 
 div.img p {
@@ -191,11 +196,11 @@ div.desc {
 	width: 100%;
 	height:100%;
 	font-size: 4em;
-	background-color: #FF046E;
+	background-color: #dc267f;
 	color: White;
 	padding-left: 10px;
 	opacity: 0;
-	z-index: 10;
+	z-index: 1;
 }
 
 .holder a .image {
@@ -221,7 +226,7 @@ div.logoholder a .text {
 	width: 100%;
 	height:100%;
 	opacity: 0;
-	z-index: 10;
+	z-index: 1;
 }
 
 div.logoholder a .image {
@@ -261,7 +266,7 @@ div.logoholder a .image {
 }
 
 .paragraph p {
-	font-size: 1em;
+	font-size: 1.1em;
 	font-family: Helvetica, Arial, serif;
 	font-weight: normal;
 /*	margin: 0px 5px 15px;*/
@@ -285,11 +290,11 @@ div.logoholder a .image {
 }*/
 
 .prototype {
-    color: #FF046E;
+    color: #dc267f;
     font-family: Helvetica, Arial, sans-serif;
     padding: 10px 10px;
     border: solid 1px;
-    border-color: #FF046E;
+    border-color: #dc267f;
 }
 
 /*footer*/
@@ -350,14 +355,57 @@ footer p {
 .back {
 	text-align: left;
 	float: left;
+	font-size: 1.5em;
 }
 
 section .back a:link, section .back a:active, section .back a:visited {
-	color: #FF046E;
+	color: #dc267f;
 }
 
 section .back a:hover {
 	color: #ff66a6;
+}
+
+p.opening {
+	font-size: 1.4em;
+	font-weight: medium;
+}
+
+div.regimg{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	text-align: center;
+}
+
+div.regimg img {
+	width: 100%;
+	margin: auto;
+}
+
+img.icon {
+	width: 40%;
+	height: 40%;
+}
+
+ul.tools {
+	list-style-type: none;
+	font-weight: normal;
+}
+
+h4 {
+	text-align: center;
+}
+
+img.toolicon {
+	display: block;
+	width: 20%;
+	margin: auto;
+	text-align: center;
+}
+
+.top {
+	border-bottom: 2px solid #dc267f;
 }
 
 @media only screen and (min-width: 768px) {
@@ -411,7 +459,7 @@ section .back a:hover {
 
 	h3 {
 		font-size: 1.5em;
-		color: #FF046E;
+		color: #dc267f;
 	}
 
 	.cimage {
@@ -425,6 +473,10 @@ section .back a:hover {
         padding: 10px;
         float: left;
     }
+
+    div.overflow img {
+	    height: 350px;
+	}
 
     .dimage {
     	width: 49.9999%;
@@ -474,6 +526,25 @@ section .back a:hover {
 	text-align: left;
 	}
 
+	div.regimg{
+		width: 80%;
+	}
+
+	img.icon {
+		width: 60%;
+		height: 60%;
+	}
+
+	.tool {
+		display: inline-block;
+		float: left;
+		padding: 0 30px;
+	}
+
+	img.toolicon {
+		width: 100%;
+	}
+
 }
 
 @media only screen and (min-width: 1170px){
@@ -493,17 +564,17 @@ section .back a:hover {
 		text-decoration: none;
 	}
 
-	.teaser {
+/*	.teaser {
 	    height: 600px;
-	}
+	}*/
 
-	#centeredAbsolute {
-		font-size: 3em;
-	}
+/*	#centeredAbsolute {
+		font-size: 2em;
+	}*/
 
 	.paragraph {
 		width: auto;
-		margin: 110px 100px 0;
+		margin: 150px 150px 0;
 	}
 
 	p {
@@ -513,14 +584,14 @@ section .back a:hover {
 	.summary {
 		display: inline-block;
 		float: left;
-		width: 33%;
+		width: 49.999%;
 		padding: 0 10px;
 	}
 
-	.summary p {
+/*	.summary p {
 		margin-top: 20px;
 	}
-
+*/
 	.holder a .text {
 		font-size: 3.2em;
 	}
@@ -536,6 +607,10 @@ section .back a:hover {
 
 	.dimage {
 		width: 49%;
+	}
+
+	div.overflow img {
+	    height: 270px;
 	}
 
 	.bottom {
@@ -562,5 +637,6 @@ section .back a:hover {
     .back {
 	text-align: left;
 	}
+
 }
 
