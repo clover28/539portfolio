@@ -1,28 +1,82 @@
 {% extends "base.html" %}
 {% block content %}
 	<section class="paragraph">
-		<h1>Beauty Organizer (Ongoing)</h1>
 		<section class="top">
+		<h1>Beauty Organizer</h1>
 			<div>
-				<h2>Summary</h2>
-				<p>
-					This product is designed for people who are passionate about makeup, specifically those who own various makeup products of different colors, textures, brands, and so forth. People in this community oftentimes find it difficult to track their collections, which can result in problems include but not limited to: redundant purchases, not fully utilizing the product that are purchased, not being able to track expired products.
-					I envision it to be a tool that helps you record your makeup products digitally. It should be pleasing to look at and easy to use. The process of inputting product information is automated and streamlined, ideally just taking a picture. It should also generalize useful suggestions on purchasing and using different products based on users' data. 
-					This is an ongoing project at the research stage. The end product will be a high-fidelity prototype. Stay tuned!
+				<p class="opening">
+					This mobile app solves the problems caused by not being able to track one’s makeup products, such as buying duplicate products and not fully utilizing a product, and provides an enjoyable way to look at one’s makeup collection. 
 				</p>
 			</div>
+		</section>
+			<br>
 			<div>
-				<h2>The Original Concept</h2>
+				<div class="tool">
+					<img class="toolicon" src="images/role.png" alt="">
+					<h4>My Role</h2>
+				</div>
 				<p>
-					This idea was initially just about lipsticks. It originated from the moment I was frustrated about figuring our what lipstick colors I own. What brand do I own most? What colors I have not had? Which of my lipsticks I have not made good use of and should start using them? How to coordinate lip colors with the rest of my look? I have a lot of questions, and I do not want to answer them with an Excel spreadsheet. Here is a more glamorous way to organize lipsticks.
+					This is an ongoing individual project. I am the product designer.
+				</p>
+				<div class="clearfix"></div>
+			</div>
+			<br>
+			<div>
+				<div class="tool">
+					<img class="toolicon" src="images/tool.png" alt="">
+					<h4>Tools</h4>
+				</div>
+				<p>
+					Interviewing, Sketching
+<!-- 					<ul class="tools">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul> -->
+				</p>
+			<div class="clearfix"></div>
+		<section class="bottom">
+			<div>
+				<h3>The Original Concept</h3>
+				<p>
+					This idea was initially just about lipsticks. It originated from the moment I was frustrated about figuring our what lipstick colors I own. What brand do I own most? What colors I have not had? Which of my lipsticks I have not made good use of and should start using them? How to coordinate lip colors with the rest of my look? I have many questions, and I do not want to answer them with an Excel spreadsheet. Here is a more glamorous way to organize lipsticks.
 				</p>
 				<iframe class="video" src="https://www.youtube.com/embed/deESeVzFXlg" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div>
+				<h3>Progress</h3>
+				<p>
+					The idea quickly expanded to a digital organizer for all kinds of makeup products. I did some interviews with my girl friends and confirmed that there is a huge need for it. 
+					In order to learn from existing solutions, I conducted a competitive analysis of four existing products, where I found out a list of pain points in current solutions.
+				</p>
+				<div class="himage">
+					<img src="images/competitiveAnalysis.png" alt="Part of the competitive analysis table">
 				</div>
-	</section>
-
-			<div class="clearfix"></div>
-
+				<div>
+					<ul>
+						<li class="listSubTitle">Weaknesses in Current Solutions
+							<ul class="listSubContent">
+								<li>Incomplete databases that miss many popular products</li>
+								<li>Database does not allow user input and is not up-to-date</li>
+								<li>For those that allow user to input product information, inputing process is very tedious</li>	
+								<li>Database not searchable or inefficient search feature</li>
+								<li>Cannot sort or filter products in a user-friendly way</li>
+								<li>Boring visual style</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+				<p>
+					From the competitive research, I decide to solve the problems of incomplete product database and tedious user input process. The app will allow user input to keep the database up-to-date, and the process of inputting product information will be automated and streamlined. It should provide sorting and filtering features that meet users' needs, and should also be pleasant to look at.
+					In further market research and user research, I look to find out whether it should generalize suggestions on purchasing and using different products based on user data.
+					This is an ongoing project at the research and ideation stage. The end product will be a high-fidelity prototype. Stay tuned!
+				</p>
+			</div>
 			<div class="back"><a href="/#projects">&#8592; &nbsp;Back to project list</a></div>
 			<div class="clearfix"></div>
+		</section>
 	</section>
 {% endblock %}

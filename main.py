@@ -23,7 +23,7 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" href=\"style_sheets/style.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><script src=\"js/modernizr.js\"></script>"
+        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" href=\"style_sheets/style.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Lora\" rel=\"stylesheet\"><script src=\"js/modernizr.js\"></script>"
         script = "<script src=\"js/jquery-2.1.1.js\"></script><script src=\"js/jquery.mixitup.min.js\"></script><script src=\"js/main.js\"></script>"
         template_vars = {
             'style': style,
@@ -93,6 +93,18 @@ class SI501Handler(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('501.html')
         self.response.out.write(template.render(template_vars))
 
+class SI622Handler(webapp2.RequestHandler):
+    def get(self):
+        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
+        script = ""
+        template_vars = {
+            'style': style,
+            'script': script,
+            'name':'work'
+        }
+        template = JINJA_ENVIRONMENT.get_template('622.html')
+        self.response.out.write(template.render(template_vars))
+
 class APIHandler(webapp2.RequestHandler):
     def get(self):
         style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
@@ -150,6 +162,7 @@ app = webapp2.WSGIApplication([
     ('/Dragon', DragonHandler),
     ('/Haley', HaleyHandler),
     ('/SI501', SI501Handler),
+    ('/SI622', SI622Handler),
     ('/API', APIHandler),
     ('/beauty', beautyHandler),
     ('/Hyecho', HyechoHandler),

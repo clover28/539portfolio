@@ -91,6 +91,7 @@ nav a:hover {
 	text-align: center;
     font-size: 1.5em;
     margin: 0;
+    font-weight: bold;
 }
 
 .teaser p {
@@ -98,7 +99,8 @@ nav a:hover {
     font-size: 1em;
     margin: 0;
     padding-top: 30px;
-/*    line-height: 50%;*/
+    line-height: 50%;
+    font-weight: normal;
 }
 
 #centeredAbsolute {
@@ -136,13 +138,15 @@ h3 {
 }
 
 div.img {
-	border: none;
     box-shadow: none;
 }
 
+div.overflow{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
 div.overflow:hover {
-    border: none;
-    box-shadow: 8px 8px black;  
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 div.img:hover .image {
@@ -285,10 +289,6 @@ div.logoholder a .image {
 	margin: auto;
 }
 
-/*#hidden {
-	display: none;
-}*/
-
 .prototype {
     color: #dc267f;
     font-family: Helvetica, Arial, sans-serif;
@@ -388,9 +388,15 @@ img.icon {
 	height: 40%;
 }
 
-ul.tools {
-	list-style-type: none;
+li.listSubTitle {
+	line-height: 1.5em;
+	font-weight: bold;
+	color: #dc267f;
+}
+
+.listSubContent {
 	font-weight: normal;
+	color: Black;
 }
 
 h4 {
@@ -406,6 +412,18 @@ img.toolicon {
 
 .top {
 	border-bottom: 2px solid #dc267f;
+}
+
+ul {
+	overflow: hidden;
+}
+
+.himage {
+    display: none;
+}
+
+#gif {
+	width: 80%; 
 }
 
 @media only screen and (min-width: 768px) {
@@ -433,9 +451,16 @@ img.toolicon {
 	    height: 400px;
 	}
 
+	.teaser p {
+		padding-top: 50px;
+	}
+
 	#intro {
 		text-align: center;
+/*		font-family: Lora, Times, Serif;*/
 	    font-size: 1.5em;
+/*	    font-weight: bold;*/
+/*	    font-style: italic;*/
 	    margin: 0;
 	    padding: 0;
 	    line-height: 30%;
@@ -484,6 +509,20 @@ img.toolicon {
         float: left;
         padding: 0 10px;
         text-align: center;
+    }
+
+   .himage img {
+    	width: 100%;
+    }
+
+    .himage {
+    	width: 40%;
+        margin: auto;
+        float: left;
+        padding: 0 10px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
     }
 
     .summary {
@@ -543,6 +582,10 @@ img.toolicon {
 
 	img.toolicon {
 		width: 100%;
+	}
+
+	#gif {
+		width: 40%; 
 	}
 
 }
