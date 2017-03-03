@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <title>Wei's Portfolio</title>
+  {{style}}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/classie.js"></script>
+  <script>
+      function init() {
+          window.addEventListener('scroll', function(e){
+              var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                  shrinkOn = 10,
+                  header = document.querySelector("header");
+              if (distanceY > shrinkOn) {
+                  classie.add(header,"smaller");
+              } else {
+                  if (classie.has(header,"smaller")) {
+                      classie.remove(header,"smaller");
+                  }
+              }
+          });
+      }
+      window.onload = init();
+  </script>
+  <style type="text/css">
+  	header {
+  		background-color: rgba(255, 255, 255, 0.5);
+  	}
+  </style>
+</head>
+<body>
+ <header>
+      <a href="/">
+        <img class="image" src="images/logo.png" alt="personal logo, a clover">
+      </a>
+      </div>
+    <nav>
+      <a href="/about"
+      {% if name == "about" %}
+          class = "current"
+          {% endif %}
+      >About</a>
+      <a href="/#projects"
+      {% if name == "index" %}
+          class = "current"
+          {% endif %}
+      >Work</a>
+      <a href="/gallery"
+      {% if name == "gallery" %}
+          class = "current"
+          {% endif %}
+      >Fun</a>
+<!--       <a href="resume.pdf"
+      {% if name == "resume" %}
+          class = "current"
+          {% endif %}
+      >Resume</a> -->
+    </nav>
+  </header>
+
+<div class="parallax"></div>
+
+<div class="parallax-window" data-parallax="scroll" data-image-src="/images/sandburg_overlay2.jpg">
+<!-- 	<div class="foreground">
+	<h1>On becoming a Designer</h1>
+	</div> -->
+
+	<div class="foreground">
+<!-- 	<h4>Wei Cai</h4> -->
+	</div>
+
+	<div class="foreground">
+		<div class="illo"><img src="/images/about1.png"></div>
+		<div class="description">
+		<p>Before becoming a newbie in design, I studied linguistics and education in China and the U.S. to understand how people around the world communicate. I developed great analytical skills doing academic research.
+		</p>
+		</div>
+	</div>
+
+	<div class="foreground right">
+		<div class="description"><p>Academic research was a great brain workout, but I realized building things that solve real-world problems is what really makes me feel satisfied. I love sketching, creating, dreaming...I really want to be a designer!</p></div>
+		<div class="illo"><img src="/images/about2.png"></div>
+	</div>
+
+	<div class="foreground">
+		<div class="illo block"><img src="/images/about3.png"></div>
+		<div class="description2"><p>I became a student in human-computer interaction at the University of Michigan where I constantly power up my designer skills!</p></div>
+
+	</div>
+
+	<div class="foreground">
+		<div class="illo"><img src="/images/about4.png"></div>
+		<div class="description">
+    <p>Now I am a happy girl in my dreamland, motivated to be a better designer!</p>
+    <p>I'm actively seeking an internship in UX or product design for summer 2017. Feel free to <a href="/about#contact">Contact me</a>.</p>
+    </div>
+	</div>
+  </div>
+
+
+  <footer>
+    <div class="footerlinks">
+      <a id="contact" href="mailto:caiw28@gmail.com" target="_top"><img class="icon" src="images/mail.png" alt="send me an email"><span class="sr-only">Email</span></a>
+<!--       <a href="https://www.instagram.com/truetigercw/" target="_blank"><img class="icon" src="images/instagram.png" alt="go to my Instagram"><span class="sr-only">Instagram</span></a> -->
+    </div>
+    <br>
+    <p>&copy; 2017 by Wei Cai</p>
+    <div class="footerlinks"><a href="resume.pdf">View Resume in PDF</a></div>
+    <p>Always learning, constantly updating</p>
+  </footer>
+
+  </body>
+</html>
+

@@ -1,43 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
-	<section class="paragraph">
-		<section class="top">
+	<div class="moduleTitle">
 		<h1>Design Jams</h1>
-			<div>
-				<p class="opening">
-					I participated in Nutanix Design Jam, Deloitte Design Jam, and Infogamers Design Jam during my first semester at UMSI. In these events, we spend 2-3 hours designing a solhe robust content. 
-				</p>
-			</div>
-		</section>
-			<br>
-			<div>
-				<div class="tool">
-					<img class="toolicon" src="images/role.png" alt="">
-					<h4>My Role</h2>
-				</div>
-				<p>
-					I participated in brainstorming, sketching, wireframing, and presentation.
-				</p>
-				<div class="clearfix"></div>
-			</div>
-			<br>
-			<div>
-				<div class="tool">
-					<img class="toolicon" src="images/tool.png" alt="">
-					<h4>Tools</h4>
-				</div>
-				<p>
-					Paper and pencil, Sketch
-<!-- 					<ul class="tools">
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul> -->
-				</p>
-			<div id="Nutanix" class="clearfix"></div>
-		<section class="bottom">
+	</div>
+	<div class="table">
+		<div class="cellProblem">
+			<h5>Introduction</h5>
+			<p>	I participated in Nutanix Design Jam, Deloitte Design Jam, and Infogamers Design Jam during my first semester at UMSI. In these events, we spend 2-3 hours designing a solhe robust content. </p>
+		</div>
+		<div class="cellList">
+			<ul>
+				<li><span> Role </span> 
+					<p>UX Designer</p>
+				</li>
+				<li><span> Methods </span> 
+					<p>Brainstorming / Sketching</p>
+				</li>
+				<li><span> Tools </span> 
+					<p>Sketch / Paper and Pencil</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<section class="paragraph">
 			<div>
 				<h3>Nutanix Design Jam</h3>
 				<p>
@@ -81,8 +66,9 @@
 					These events were very fun and challenging for me. I experienced fast-paced design in a short period of time and practiced communicating ideas visually. I learned about general process of design and also sharpened my presentation skills.
 				</p>
 			</div>
-			<div class="back"><a href="/#projects">&#8592; &nbsp;Back to project list</a></div>
-			<div class="clearfix"></div>
+			<div>
+			<a class="back" href="/SI622"><p>«&nbsp;Previous<br>Usability Study: Gale Researcher</p></a>
+			<a class="next" href="/Dragon"><p>Next&nbsp;»<br>Mobile: Dragon Scrolls</p></a>
+			</div>
 		</section>
-	</section>
 {% endblock %}

@@ -35,7 +35,7 @@ class MainHandler(webapp2.RequestHandler):
 
 class workHandler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\">"
+        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\">"
         script = ""
         template_vars = {
             'style': style,
@@ -47,7 +47,7 @@ class workHandler(webapp2.RequestHandler):
 
 class galleryHandler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheetGallery.css\"><link href=\"style_sheets/lightbox.css\" rel=\"stylesheet\"><script>lightbox.option({\"alwaysShowNavOnTouchDevices\": true})</script>"
+        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheetGallery.css\"><link href=\"style_sheets/lightbox.css\" rel=\"stylesheet\"><script>lightbox.option({\"alwaysShowNavOnTouchDevices\": true})</script>"
         script = "<script src=\"js/lightbox-plus-jquery.js\"></script>"
         template_vars = {
             'style': style,
@@ -59,7 +59,7 @@ class galleryHandler(webapp2.RequestHandler):
 
 class DragonHandler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
+        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
         script = ""
         template_vars = {
             'style': style,
@@ -71,7 +71,7 @@ class DragonHandler(webapp2.RequestHandler):
 
 class HaleyHandler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
+        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
         script = ""
         template_vars = {
             'style': style,
@@ -83,7 +83,7 @@ class HaleyHandler(webapp2.RequestHandler):
 
 class SI501Handler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
+        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
         script = ""
         template_vars = {
             'style': style,
@@ -95,7 +95,7 @@ class SI501Handler(webapp2.RequestHandler):
 
 class SI622Handler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
+        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
         script = ""
         template_vars = {
             'style': style,
@@ -107,7 +107,7 @@ class SI622Handler(webapp2.RequestHandler):
 
 class APIHandler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
+        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
         script = ""
         template_vars = {
             'style': style,
@@ -119,7 +119,7 @@ class APIHandler(webapp2.RequestHandler):
 
 class beautyHandler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheetGallery.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
+        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheetGallery.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
         script = ""
         template_vars = {
             'style': style,
@@ -131,7 +131,7 @@ class beautyHandler(webapp2.RequestHandler):
 
 class HyechoHandler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheetGallery.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
+        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheetGallery.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
         script = ""
         template_vars = {
             'style': style,
@@ -144,7 +144,7 @@ class HyechoHandler(webapp2.RequestHandler):
 
 class designJamsHandler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
+        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
         script = ""
         template_vars = {
             'style': style,
@@ -152,6 +152,18 @@ class designJamsHandler(webapp2.RequestHandler):
             'name':'work'
         }
         template = JINJA_ENVIRONMENT.get_template('designJams.html')
+        self.response.out.write(template.render(template_vars))
+
+class aboutHandler(webapp2.RequestHandler):
+    def get(self):
+        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js\"></script><script src=\"/js/parallax.js-1.4.2/parallax.min.js\"></script>"
+        script = ""
+        template_vars = {
+            'style': style,
+            'script': script,
+            'name':'about'
+        }
+        template = JINJA_ENVIRONMENT.get_template('about.html')
         self.response.out.write(template.render(template_vars))
 
 
@@ -167,5 +179,6 @@ app = webapp2.WSGIApplication([
     ('/beauty', beautyHandler),
     ('/Hyecho', HyechoHandler),
     ('/designJams', designJamsHandler),
+    ('/about', aboutHandler),
     ('.*', MainHandler)
 ], debug=True)

@@ -1,43 +1,49 @@
 {% extends "base.html" %}
 {% block content %}
+	<div class="moduleTitle">
+		<h1>Mobile Game: The Dragon Scrolls</h1>
+	</div>
+	<div class="table">
+		<div class="cellProblem">
+			<h5>The Problem</h5>
+			<p class="problem">How can we make learning Chinese characters more fun?</p>
+			<p>Learning Chinese characters is one of the biggest obstacles learners face when learning Chinese. Memorizing Chinese characters can be a daunting task that dampers learners' interest. Together with my partner, I combined my knowledge in linguistics and education with my passion in games to design a game that motivates learners. </p>
+		</div>
+		<div class="cellList">
+			<ul>
+				<li><span> Role </span> 
+					<p>Game designer, graphic designer</p>
+				</li>
+				<li><span> Methods </span> 
+					<p>Competitive analysis / Prototyping</p>
+				</li>
+				<li><span> Tools </span> 
+					<p>Sketch / Invision</p>
+				</li>
+				<li><span> Team </span>
+					<p>Wendy Guo</p>
+				</li>
+				<li><span> Timeline </span> 
+				<p>January 2016 - May 2016</p>
+				</li>
+			</ul>
+		</div>
+	</div>
 	<section class="paragraph">
-		<section class="top">
-		<h1>The Dragon Scrolls</h1>
+			<h3>Learning theories: Models of player motivation</h3>
 			<div>
-				<p class="opening">
-					This mobile app helps learners learn the appearance and sound of Chinese characters through a role playing game. Together with my partner, I combined my knowledge in linguistics and education with my passion in games to create this immersive educational experience.
+				<p class="process">
+					Our game design is based on existing models of player motivation. Malone and Lepper (1987) and Sweetser and Wyeth (2005) proposed taxonomy of game motivators that include challenge, control, goals, feedback, immersion, and so forth. To motivate learners, we designed clear and varied goals in the game, and also provide immediate feedback. Click <a href="https://docs.google.com/document/d/1MBYVFfM8iUiBXIKRtIc2m7Mvi7crf1OVBF7CXsvgpBw/edit?usp=sharing">here</a> to read the design paper.
 				</p>
-			</div>
-		</section>
-			<br>
-			<div>
-				<div class="tool">
-					<img class="toolicon" src="images/role.png" alt="">
-					<h4>My Role</h2>
+				<div class="dimage">
+		  			<div class="img">
+						<img src="images/motivationModels.png" alt="the first scene of the game">
+					</div>
 				</div>
-				<p>
-					I designed the gameplay related to the appearance of characters, the general structure of the game, and the interface. I also made a prototype for part of the game.
-				</p>
 				<div class="clearfix"></div>
 			</div>
-			<br>
-			<div>
-				<div class="tool">
-					<img class="toolicon" src="images/tool.png" alt="">
-					<h4>Tools</h4>
-				</div>
-				<p>
-					Sketch, Adobe Photoshop, InVision
-<!-- 					<ul class="tools">
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul> -->
-				</p>
-			<div class="clearfix"></div>
-		<section class="bottom">
+
+			<h3>Game features</h3>
 			<div>
 				<p class="process">
 					I came up with the idea of breaking down Chinese characters into puzzle pieces to learn the appearance of the characters, and paired up with my partner who was interested in using sound association between Chinese and English to learn the pronunciation of Chinese. The final product is a the combination of these two learning strategies in a fantasy world based on ancient Chinese myths.
@@ -53,22 +59,22 @@
 				<div class="dimage">
 					<div class="img">
 						<img src="images/openingCopy.png" alt="a story about a mysterious acient creature the player can unlock">
-						<p>Engaging story</p>
 					</div>
 				</div>
 				<div class="dimage">
 					<div class="img">
 						<img src="images/mapCopy.png" alt="map of different levels">
-						<p>Progression in gameplay</p>
 					</div>
 				</div>
 				<div class="clearfix"></div>
+				<p>
+					When players enter the game, they will choose an area on an interactive map. Each area consists of five levels. The smallest goal is to complete each level. The completion of a level will be indicated by the color change in the icon of this level. The second goal is to complete more areas and unlock medals of creatures in ancient Chinese myths. The overarching goal is to collect the medals to complete a broken ancient scroll. The last goal is to unlock more achievements that can be viewed in the “achievement” feature. The content of achievements are unknown until they have been unlocked. The multiple layers of goals increase the complexity and uncertainty of the challenge and increase enjoyment (Malone & Lepper, 1987).
+				</p>
 				<h4>Prototype of the learning process and the puzzle</h4>
 				<div id="gif">
 					<div class="img">
 						<img src="images/dragongif.gif" alt="prototype">
 					</div>
-					
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -78,8 +84,9 @@
 					I was able to combine my knowledge in linguistics and passion for design. sharpened my design skills through this project and learned about the theories of educational games. I taught myself to use Sketch and InVision during this project. I also gained more experience about team work as I was constantly dicussing design ideas with my partner.
 				</p>
 			</div>
-			<div class="back"><a href="/#projects">&#8592; &nbsp;Back to project list</a></div>
-			<div class="clearfix"></div>
+			<div>
+			<a class="back" href="/designJams"><p>«&nbsp;Previous<br>Design Jams</p></a>
+			<a class="next" href="/API"><p>Next&nbsp;»<br>Playing with Code</p></a>
+			</div>
 		</section>
-	</section>
 {% endblock %}

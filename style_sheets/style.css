@@ -19,7 +19,7 @@ html * {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
   color: #dc267f;
   background-color: #ffffff;
@@ -213,12 +213,12 @@ xtab-filter
   }
   .cd-tab-filter a {
     display: inline-block;
-    padding: 0 1em;
+    padding: 0 0.5em;
     width: auto;
     color: #303030;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.3rem;
+/*    text-transform: uppercase;*/
+    font-weight: normal;
+    font-size: 1em;
   }
   .no-touch .cd-tab-filter a:hover {
     color: #dc267f;
@@ -261,6 +261,7 @@ xgallery
 .cd-gallery {
   padding: 26px 5%;
   width: 100%;
+  font-weight: bold;
 }
 .cd-gallery li {
   margin-bottom: 1.6em;

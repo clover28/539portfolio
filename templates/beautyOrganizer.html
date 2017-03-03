@@ -1,52 +1,37 @@
 {% extends "base.html" %}
 {% block content %}
+	<div class="moduleTitle">
+		<h1>Mobile App: Beauty Organizer (Ongoing)</h1>
+	</div>
+	<div class="table">
+		<div class="cellProblem">
+			<h5>The Problem</h5>
+			<p class="problem">How can we help people build a digital record of their makeup products and leverage this data?</p>
+			<p>	This mobile app solves the problems caused by not being able to track one’s makeup products, such as buying duplicate products and not fully utilizing a product, and provides an enjoyable way to look at one’s makeup collection.  </p>
+		</div>
+		<div class="cellList">
+			<ul>
+				<li><span> Role </span> 
+					<p>Product designer</p>
+				</li>
+				<li><span> Methods </span> 
+					<p>Interviewing / Competitive Analysis / Sketching / Storyboarding</p>
+				</li>
+				<li><span> Tools </span> 
+					<p>Sketch</p>
+				</li>
+				<li><span> Team </span>
+					<p>Individual Project</p>
+				</li>
+				<li><span> Timeline </span> 
+				<p>January 2017 - May 2017</p>
+				</li>
+			</ul>
+		</div>
+	</div>
 	<section class="paragraph">
-		<section class="top">
-		<h1>Beauty Organizer</h1>
 			<div>
-				<p class="opening">
-					This mobile app solves the problems caused by not being able to track one’s makeup products, such as buying duplicate products and not fully utilizing a product, and provides an enjoyable way to look at one’s makeup collection. 
-				</p>
-			</div>
-		</section>
-			<br>
-			<div>
-				<div class="tool">
-					<img class="toolicon" src="images/role.png" alt="">
-					<h4>My Role</h2>
-				</div>
-				<p>
-					This is an ongoing individual project. I am the product designer.
-				</p>
-				<div class="clearfix"></div>
-			</div>
-			<br>
-			<div>
-				<div class="tool">
-					<img class="toolicon" src="images/tool.png" alt="">
-					<h4>Tools</h4>
-				</div>
-				<p>
-					Interviewing, Sketching
-<!-- 					<ul class="tools">
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul> -->
-				</p>
-			<div class="clearfix"></div>
-		<section class="bottom">
-			<div>
-				<h3>The Original Concept</h3>
-				<p>
-					This idea was initially just about lipsticks. It originated from the moment I was frustrated about figuring our what lipstick colors I own. What brand do I own most? What colors I have not had? Which of my lipsticks I have not made good use of and should start using them? How to coordinate lip colors with the rest of my look? I have many questions, and I do not want to answer them with an Excel spreadsheet. Here is a more glamorous way to organize lipsticks.
-				</p>
-				<iframe class="video" src="https://www.youtube.com/embed/deESeVzFXlg" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<div>
-				<h3>Progress</h3>
+				<h3>Competitive Research</h3>
 				<p>
 					The idea quickly expanded to a digital organizer for all kinds of makeup products. I did some interviews with my girl friends and confirmed that there is a huge need for it. 
 					In order to learn from existing solutions, I conducted a competitive analysis of four existing products, where I found out a list of pain points in current solutions.
@@ -60,7 +45,7 @@
 							<ul class="listSubContent">
 								<li>Incomplete databases that miss many popular products</li>
 								<li>Database does not allow user input and is not up-to-date</li>
-								<li>For those that allow user to input product information, inputing process is very tedious</li>	
+								<li>For those that allow users to input product information, inputting process is very tedious</li>	
 								<li>Database not searchable or inefficient search feature</li>
 								<li>Cannot sort or filter products in a user-friendly way</li>
 								<li>Boring visual style</li>
@@ -70,13 +55,32 @@
 				</div>
 				<div class="clearfix"></div>
 				<p>
-					From the competitive research, I decide to solve the problems of incomplete product database and tedious user input process. The app will allow user input to keep the database up-to-date, and the process of inputting product information will be automated and streamlined. It should provide sorting and filtering features that meet users' needs, and should also be pleasant to look at.
-					In further market research and user research, I look to find out whether it should generalize suggestions on purchasing and using different products based on user data.
-					This is an ongoing project at the research and ideation stage. The end product will be a high-fidelity prototype. Stay tuned!
+					From the competitive research, I decide to solve the problems of incomplete product database and tedious user input process. The app will allow user input to keep the database up-to-date, and the process of inputting product information will be automated and streamlined. It should provide sorting and filtering features that meet users' needs, and should also be pleasant to look at. In further market research and user research, I look to find out whether it should generalize suggestions on purchasing and using different products based on user data.
 				</p>
 			</div>
-			<div class="back"><a href="/#projects">&#8592; &nbsp;Back to project list</a></div>
+			<div>
+				<h3>Personas</h3>
+				<p>After interviewing potential users, I created three expert personas and one anti persona to better empathize with users and keep the product on the right direction.</p>
+				<img class="dimage" src="images/persona1.png">
+				<img class="dimage" src="images/persona2.png">
+				<img class="dimage" src="images/persona3.png">
+				<img class="dimage" src="images/persona4.png">
+				<div class="clearfix"></div>
+				<p>Right now I am creating a journey map that describes the workflow of a typical user interacting with the app. The end product of this project will be a high-fidelity prototype. Stay tuned!</p>
+			</div>
+			<div>
+				<h3>The Original Concept</h3>
+				<p>
+					This idea was initially just about lipsticks. It originated from the moment I was frustrated about figuring our what lipstick colors I own. What brand do I own most? What colors I have not had? Which of my lipsticks I have not made good use of and should start using them? How to coordinate lip colors with the rest of my look? I have many questions, and I do not want to answer them with an Excel spreadsheet. Here is a more glamorous way to organize lipsticks.
+				</p>
+				<h4>*Video contains sound</h4>
+				<iframe class="video" src="https://www.youtube.com/embed/deESeVzFXlg" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div>
+			<a class="back" href="/SI501"><p>«&nbsp;Previous<br>Contextual Inquiry: Bailey Library</p></a>
+			<a class="next" href="/SI622"><p>Next&nbsp;»<br>Usability Study: Gale Researcher</p></a>
+			</div>
 			<div class="clearfix"></div>
 		</section>
-	</section>
+
 {% endblock %}

@@ -1,0 +1,8 @@
+.table {display: table;}
+.cellProblem {display: table-cell; width: 60%; position: relative; min-height: 1px;}
+.cellList {display: table-cell;}
+.cellList ul {list-style: none;}
+/*.cellList li {margin: 15px 0;}*/
+.cellList span {display: inline-block; width: 130px; letter-spacing: 2px; text-transform: uppercase; font-size: 12px;}
+.cellList p {-webkit-margin-before: 0.2em;}
+.problem {font-weight: bold; font-size: 1.2em;}
