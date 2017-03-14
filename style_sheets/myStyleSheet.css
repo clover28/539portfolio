@@ -5,7 +5,7 @@ html,body {
 }
 
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial ,sans-serif;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial,sans-serif;
 	color: Black;
 	-webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased; 
@@ -60,7 +60,7 @@ header img {
 
 nav a {
 	display: inline-block;
-	font-size: 1rem;
+/*	font-size: 1rem;*/
 	text-decoration: none;
 	color: #323232;
 	margin-left: 5px;
@@ -78,8 +78,9 @@ nav a:hover {
 	}
 
 header.smaller {
-    line-height: 50px;
-    background-color: rgba(255, 255, 255, 1);
+	display: none;
+/*    line-height: 50px;
+    background-color: rgba(255, 255, 255, 1);*/
 }
 
 header.smaller a img {
@@ -94,7 +95,7 @@ header.smaller nav a {
 
 /*Highlight current page*/
 .current {
-	color: #dc267f;
+	font-weight: bold;
 /*	border-bottom: solid 1.5px;
 	line-height: 30px;*/
 }
@@ -111,21 +112,6 @@ header.smaller nav a {
 	z-index: 0;
 	text-align: center;
 }
-/*
-.teaserbutton {
-	position: relative;
-	top: 50px;
-	color: black;
-	padding: 10px;
-	font-size: 0.7em;
-	border:2px solid black;
-	z-index: 100;
-}
-
-.teaserbutton:hover {
-	color: #dc267f;
-	border:2px solid #dc267f;
-}*/
 
 @keyframes appear {
 	0% {opacity: 0;}
@@ -174,9 +160,9 @@ h1 {
 
 h2 {
 	font-size: 1em;
-	text-align: center;
+/*	text-align: center;*/
 	font-weight: bold;
-	margin: 1.5em 0 1.2em;
+	margin-top: 1em;
 }
 
 h3 {
@@ -197,9 +183,16 @@ h5{
 }
 
 p {
-	margin: 1em 0;
-	line-height: 1.2em;
-	color: #323232;
+	--x-height-multiplier: 0.35;
+    --baseline-multiplier: 0.179;
+    letter-spacing: .01rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+    font-size: 18px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+	margin-top: 29px;
 }
 
 div.img {
@@ -352,7 +345,7 @@ div.logoholder a .image {
 
 .paragraph p {
 	font-size: 1.1em;
-	font-family: Helvetica, Arial, serif;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 }
 
@@ -381,7 +374,7 @@ div.logoholder a .image {
 footer {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	font-size: 0.8em;
+	font-size: 1em;
 	color: Black;
 /*	font-weight: lighter;*/
 	background-color: #ffffff;
@@ -399,11 +392,13 @@ footer div a{
 	color: Black;
 	text-decoration:none;
 	text-align: center;
-	margin: 0 10px;
+/*	margin: 0 10px;*/
 }
 
 footer p {
+	font-size: 1.2em;
 	text-align: center;
+	margin: 0;
 } 
 
 .sr-only {
@@ -435,17 +430,12 @@ footer p {
 	text-align: center;
 }
 
-.back p {
-	font-size: 1.2em;
+.back p, .next p{
+	font-size: 0.7em;
 	font-weight: bold;
 	color: #dc267f;
 }
 
-.next p {
-	font-size: 1.2em;
-	font-weight: bold;
-	color: #dc267f;
-}
 
 a.back:link, a.back:active, a.back:visited {
 	float: left;
@@ -489,9 +479,9 @@ div.regimg img {
 }
 
 img.icon {
-	width: 40%;
-	height: 40%;
-	margin: 1.5em;
+	width: 30%;
+	height: 30%;
+/*	margin: 1.5em;*/
 }
 
 li.listSubTitle {
@@ -541,7 +531,7 @@ ul {
 .cellList span {display: inline-block; width: 130px; letter-spacing: 2px; text-transform: uppercase; font-size: 12px;}
 .cellList p {-webkit-margin-before: 0.2em; color: #323232;}
 .problem {font-weight: bold; /*font-size: 1.2em;*/}
-.table {padding: 0 10px;}
+.table {padding: 0 10px; border-bottom: 1px solid #323232;}
 .table p {color: #323232;}
 .cellProblem, .cellList {
 	margin: 1.5em 0;
@@ -631,7 +621,18 @@ p.citation {
 	display: none;
 }
 
-@media only screen and (min-width: 769px) {
+.projectintro {
+	width: 100%;
+	background-color: #f0f0f0;
+}
+
+.projectintro p {
+	width: 95%;
+	margin: auto;
+}
+
+
+@media only screen and (min-width: 768px) {
 	header img {
 		width: 80px;
 		height: 80px;
@@ -758,8 +759,9 @@ p.citation {
     }
 
     footer {
-    	font-size: 1em;
+    	font-size: 0.8em;
     	padding: 30px 0;
+    	margin-top: 50px;
     }
 
 	footer div a{
@@ -775,8 +777,8 @@ p.citation {
 	}
 
 	img.icon {
-		width: 60%;
-		height: 60%;
+		width: 40%;
+		height: 40%;
 	}
 
 	.tool {
@@ -793,11 +795,11 @@ p.citation {
 		width: 40%; 
 	}
 
-	.table {display: table; padding: 0 40px 0; }
+	.table {display: table; padding: 0 40px 20px; }
 	.cellProblem {display: table-cell; width: 50%; position: relative; min-height: 1px; padding-right: 1em;}
 	.cellList {display: table-cell; padding-left: 1em;}
 	.cellList ul {list-style: none;}
-	/*.cellList li {margin: 15px 0;}*/
+	.cellList li {margin: 15px 0;}
 	.cellList span {display: inline-block; width: 130px; letter-spacing: 2px; text-transform: uppercase; font-size: 12px; font-weight: bold;}
 	.cellList p {-webkit-margin-before: 0.2em;}
 	.problem {font-weight: bold; font-size: 1.3em;}
@@ -810,10 +812,10 @@ p.citation {
 	}
 
 	.paragraph {
-		width: auto;
+		width: 700px;
 		padding: 0px 40px 0;
 		background-size: cover;
-		border-top: 2px solid #e2e2e2;
+/*		border-top: 2px solid #e2e2e2;*/
 		color: #323232;
 	}
 
@@ -837,6 +839,52 @@ p.citation {
 
 	#img2 {
 		display: none;
+	}
+
+	.back p, .next p{
+		font-size: 1.2em;
+	}
+
+	.projectwrapper {
+		width: 600px;
+	}
+
+	.projectintro p {
+		width: 600px;
+		--x-height-multiplier: 0.35;
+	    --baseline-multiplier: 0.179;
+	    letter-spacing: .01rem;
+	    font-weight: 400;
+	    font-family: 'Open Sans', 'Helvetica Neue', Sans-serif;
+	    font-size: 21px;
+	    line-height: 1.9;
+	    letter-spacing: -.003em;
+
+	}
+
+	h1{
+		font-weight: bold;
+		font-size: 2.5em;
+	}
+
+	.projectintro {
+		margin-top: 90px;
+		height: 550px;
+		padding-top: 100px;
+	}
+
+	.center {
+		width: 70%;
+		margin: auto;
+	}
+
+	.center ul {
+		padding-left: 30px;
+	}
+
+	.page {
+		margin: 30px 0;
+		background-color: #323232;
 	}
 }
 
@@ -917,7 +965,6 @@ p.citation {
 	.table {display: table; width: 73%; margin: auto; }
 
 	.paragraph {
-		width: 73%;
 		margin: auto;
 	}
 

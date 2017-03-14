@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-	<div class="moduleTitle">
-		<h1>IOS App: Hyecho's Journey (Ongoing)</h1>
-	</div>
-	<div class="table">
-		<div class="cellProblem">
+	<section class="projectintro">
+		<h1>iOS App: Hyecho's Journey (Ongoing)</h1>
+		<p>Our sponsors are seeking a mobile app that can enhance the visiting experience, attract more visitors, and increase young people’s interest in an upcoming buddhist art exhibition at the Smithsonian Museum. I learn to adapt my UX design process to constraints and iterate through design ideas. </p>
+	</section>
+<!-- 		<div class="cellProblem">
 			<h5>The Problem</h5>
 			<p class="problem">How can we help visitors better enjoy a Buddhist art exhibit?</p>
 			<p>	The Smithsonian Museum is seeking for an interactive app that enhances the visiting experience and attracts more visitors to their upcoming Buddhism-themed exhibition, Hyecho’s Journey. With insights from our research, we dropped the conventional digital catalog approach, and are aiming to create a game-like product that motivates users to explore the robust content. </p>
@@ -28,16 +28,24 @@
 				</li>
 			</ul>
 		</div>
-	</div>
+	</div> -->
 	<section class="paragraph">
-			<h3>Overcoming Various Constraints</h3>
+			<h3>My Role</h3>
+			<p>I am a UX/UI designer on a team of seven. I partnered with four engineers and two other designers to uncover user insights and translate concepts into features that address customer needs and pain points. I defined the product with my team and helped our sponsor prioritize their goals. I created storyboards, personas, prototypes. I presented works weekly to sponsors.</p>
+			<h3>Product Definition</h3>
+			<p>
+				Coming to the problem with minimum knowledge in museum apps, I conducted competitor analysis with the team. We looked into the existing apps for museums and exhibitions, and highlighted features including gamification, different ways of sorting objects, showing relationship between objects, and social interaction. At the same time, we conducted 21 user interviews to find out the needs and motivations of our potential users.
+			</p>
 			<p>
 				Like every other product, this app needs to realize the goals of clients, meet the needs of users, and overcome the constraints of the physical exhibition and technologies. 
 			</p>
+			<div>
+	</section>
+			<div class="projectintro">
+			<div class="center">
 			<div class="himage">
 				<img src="images/triangle.png" alt="Constraints of design">
 			</div>
-			<div>
 				<ul>
 					<li class="listSubTitle">Our faculty clients: 
 						<ul class="listSubContent">
@@ -66,25 +74,38 @@
 						</ul>
 					</li>
 				</ul>
-			</div>
 			<div class="clearfix"></div>
+			</div>
+			</div>
+			<section class="paragraph">
 			<p>
-				We aligned users' needs and our design ideas with the Value Proposition Canvas. By discussing our Value Proposition Canvas with our clients, we helped them prioritize their goals, and determined that the main goal of the product should be enhancing the experience of those who visit the museum. The free app will contain audio guide and detailed information to relieve users' doubt about the necessity of a museum app. It will leverage the unique content and enable users to experience the journey of Hyecho, a young Korean Monk in the 8th century, in order to raise people's interest in the Buddhist content.
+				We aligned users' needs and our design ideas with the Value Proposition Canvas. We found two pain points that need to be addressed, one being that many people do not see a companion app for an exhibit necessary, two being that many people associate Buddhism and art exhibit with being boring. 
+			</p>
+			<p>
+			To relieve the first pain point, we referred to users’ need of extra information and decided to add audio guide to the app. To further justify this decision, we conducted a survey about users’ view on audio guides, and 93% of people think audio guide is useful for learning, and over 70% of them have actually used audio guides. 
+			</p>
+			<p>
+			To keep the visitors far from being bored, we started to consider what is intriguing about our content. The story of the exhibit is about a young Korean monk named Hyecho, who traveled throughout Asia in the 2nd century to visit places related to Buddha’s life. Our client provided us a map of Hyecho’s Journey, and we decided to have an interactive map that maps Hyecho’s journey and helps organize objects by location. 
+			</p>
+			<p>
+			In order to realize sponsors’ goals of gaining more publicity for the exhibition, we decided that users can unlock exclusive content by engaging with the app and share the content on social media.
+			</p>
+			<p>
+			With these main design ideas, we helped our sponsors prioritize their goals. We decided to put the experience of visitors in the museum first, and realize the audio guide feature, map and journey, social media sharing, and gamified interactions with the object one by one in the order of priority.
 			</p>
 			<div class="regimg">
 				<img src="images/ValuePropositionCanvas.png" alt="Value Proposition Canvas">
 			</div>
 
 			<h3>Storyboarding the product direction</h3>
-			<div class="himage">
+			<div>
+			<p>
+				With the ideas mentioned above, I created a storyboard to illustrate our initial product direction. My storyboard addresses all the possible features the team has discussed and provides a complete work flow. From the storyboard, we found a problem that people need to spend some time navigating the app and reach the object information they want, which can be too demanding for many visitors. </p>
+			<p>	With inspirations from the games I have played, I suggested a journal feature. The journal is both a museum catalog and an activity log, a reward system. Users can search objects in the journal directly from the first screen. The journal can also keep record of the achievements a user has completed to add extra value for those who engage more with the app. 
+			</p>
+			<div class="regimg">
 				<img src="images/Hyecho_storyboard2.png" alt="Storyboards of the app">
 			</div>
-			<p>
-				With the ideas mentioned above, I created a storyboard to illustrate our initial product direction. My storyboard addresses all the possible features the team has discussed and provides a complete work flow. 
-			</p>
-			<p>In my initial storyboard, the main screen of the app is a map with several locations highlighted. Users click to each location and sees a menu that looks like a book, which would allow them to view object descriptions with audio available, background stories, and play mini games. After completing cetain tasks, they will unlock exclusive content that can be shared on social media.
-			</p>
-			<div class="clearfix"></div>
 			<h3>Prototype, test, repeat</h3>
 			<h4>Landscape or portrait?</h4>
 			<div class="cimage">
@@ -98,9 +119,11 @@
 			</div>
 			<p>After outlining the product direction, we started to prototype our design ideas and test with users. The first choice we need to make is the orientation of the screen. Initially, we were envisioning a horizontal app that can display a map better. However, our sponsor pointed out that it would be inconvenient for people to flip their phone. 
 			To make the right choice, we interviewed users and showed them two kinds of screens. It turns out that everyone prefers the vertical screen. Some users have the portrait orientation locked.</p>
-
 			<div class="part">
-			<div class="himage">
+			<h4>One prototype a week</h4>
+			<p>
+				 After getting feedbacks from our sponsors and empathizing with visitors in the museum, we decided to add a journal feature that allows users to access object descriptions without going through the map content. When they open the app, they can directly search objects by number in the journal. </p>
+			<div class="cimage">
 			<div class="simage">
 				<img src="images/prototype1.gif" alt="Storyboards of the app">
 			</div>
@@ -108,11 +131,8 @@
 				<img src="images/prototype0216.gif" alt="Storyboards of the app">
 			</div>
 			</div>
-			<h4>One prototype a week</h4>
-			<p>
-				 After getting feedbacks from our sponsors and empathizing with visitors in the museum, we decided to add a journal feature that allows users to access object descriptions without going through the map content. When they open the app, they can directly search objects by number in the journal. 
 
-				 <p class="citation">* Prototype on the left is created together with Rebecca Henry and Sindhu Giri. Menu icons for the right prototype are from Flaticon.com, and the map image is from game Yin Yang Shi. 
+			<p class="citation">* Prototype on the left is created together with Rebecca Henry and Sindhu Giri. Menu icons for the right prototype are from Flaticon.com, and the map image is from game Yin Yang Shi. 
 			</p>
 			<div class="clearfix"></div>
 			<p>
@@ -121,12 +141,14 @@
 			</div>
 			<div class="clearfix"></div>
 			<p>
-				 We are currently brainstorming interactions related to the objects, of which the information we just got from our sponsors. The whole team will iterate through the design and implement it. A minimal viable product will be available around May. Stay tuned!
+				 We are currently brainstorming interactions related to the objects, of which the information we just got from our sponsors. With new data from the Freer and Sackler Gallery, we are also updating our personas and journey map to grasp the complete museum visiting experience and design the features of the app in context. The whole team will iterate through the design and implement it. A minimal viable product will be available around May.
 			</p>
-			<div>
-			<a class="back" href="/#projects"><p>«&nbsp;Previous<br>Back to project list</p></a>
+			<h3>Challenge and Takeaway</h3>
+			<p>Throughout the design process, we have not and will not be able to go to the Freer and Sackler Gallery. We did not get the images and information of the objects being displayed from our sponsors until very recently. Because of these constraints, we were not able to plan out every detail of the product from the beginning. It had not been possible to go through a linear design process where we make wireframes for the whole product, and create lo-fi, and high-fi prototypes one by one. </p>
+			<p>However, I have been able to think through the information I have in hand and pick the UX tool that can achieve our short-term goal most quickly. I have learned that UX design does not always follow the perfect process, and I am learning to adapt the UX methodologies I have learned to different contexts.
+			</p>
+			<div class="page">
 			<a class="next" href="/Haley"><p>Next&nbsp;»<br>Web: Haley Tricycles</p></a>
 			</div>
 			</section>
-
 {% endblock %}

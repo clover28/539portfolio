@@ -5,6 +5,7 @@
   {{style}}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular, italic|Roboto:black, bold" rel="stylesheet">
   <script src="js/classie.js"></script>
   <script>
       function init() {
@@ -42,21 +43,22 @@
       </a>
       </div>
     <nav>
+
+      <a href="/#projects"
+      {% if name == "index" %}
+          class = "current"
+          {% endif %}
+      >Projects</a>     
       <a href="/about"
       {% if name == "about" %}
           class = "current"
           {% endif %}
       >About</a>
-      <a href="/#projects"
-      {% if name == "index" %}
-          class = "current"
-          {% endif %}
-      >Work</a>
       <a href="/gallery"
       {% if name == "gallery" %}
           class = "current"
           {% endif %}
-      >Fun</a>
+      >Graphics</a>
     </nav>
   </header>
 
@@ -68,8 +70,10 @@
   <footer>
     <div class="footerlinks">
       <a href="mailto:caiw28@gmail.com" target="_top"><img class="icon" src="images/mail.png" alt="send me an email"><span class="sr-only">Email</span></a>
-<!--       <a href="https://www.instagram.com/truetigercw/" target="_blank"><img class="icon" src="images/instagram.png" alt="go to my Instagram"><span class="sr-only">Instagram</span></a> -->
+      <a href="https://www.instagram.com/truetigercw/" target="_blank"><img class="icon" src="images/instagram.png" alt="go to my Instagram"><span class="sr-only">Instagram</span></a>
+      <a href="https://github.com/clover28" target="_blank"><img class="icon" src="images/github.png" alt="go to my Github Profile"><span class="sr-only">Github</span></a>
     </div>
+    <br>
     <p>&copy; 2017 by Wei Cai</p>
     <div class="footerlinks"><a href="resume.pdf">View Resume in PDF</a></div>
     <p>Always learning, constantly updating</p>

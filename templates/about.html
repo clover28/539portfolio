@@ -30,32 +30,28 @@
   </style>
 </head>
 <body>
- <header>
+<header>
       <a href="/">
         <img class="image" src="images/logo.png" alt="personal logo, a clover">
       </a>
       </div>
     <nav>
+
+      <a href="/#projects"
+      {% if name == "index" %}
+          class = "current"
+          {% endif %}
+      >Projects</a>     
       <a href="/about"
       {% if name == "about" %}
           class = "current"
           {% endif %}
       >About</a>
-      <a href="/#projects"
-      {% if name == "index" %}
-          class = "current"
-          {% endif %}
-      >Work</a>
       <a href="/gallery"
       {% if name == "gallery" %}
           class = "current"
           {% endif %}
-      >Fun</a>
-<!--       <a href="resume.pdf"
-      {% if name == "resume" %}
-          class = "current"
-          {% endif %}
-      >Resume</a> -->
+      >Graphics</a>
     </nav>
   </header>
 
