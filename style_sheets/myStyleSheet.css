@@ -155,7 +155,7 @@ h1 {
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
-    margin: 1.5em 0 1.2em;
+    margin: 3em 0 1.2em;
 }
 
 h2 {
@@ -674,6 +674,7 @@ p.citation {
 
 	h1 {
 	    font-size: 3em;
+	    margin: 1.5em 0 1.2em;
 	}
 
 	h2{
