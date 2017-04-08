@@ -28,7 +28,7 @@ class MainHandler(webapp2.RequestHandler):
         template_vars = {
             'style': style,
             'script': script,
-            'name':'index'
+            'name':'work'
         }
         template = JINJA_ENVIRONMENT.get_template('index.html')
         self.response.out.write(template.render(template_vars))
@@ -119,8 +119,8 @@ class APIHandler(webapp2.RequestHandler):
 
 class beautyHandler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheetGallery.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
-        script = ""
+        style = "<link href=\"style_sheets/lightbox.css\" rel=\"stylesheet\"><link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheetGallery.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
+        script = "<script src=\"js/lightbox-plus-jquery.js\"></script>"
         template_vars = {
             'style': style,
             'script': script,
@@ -131,8 +131,8 @@ class beautyHandler(webapp2.RequestHandler):
 
 class HyechoHandler(webapp2.RequestHandler):
     def get(self):
-        style = "<link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheetGallery.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\">"
-        script = ""
+        style = "<link href=\"style_sheets/lightbox.css\" rel=\"stylesheet\"><link rel=\"stylesheet\" href=\"style_sheets/reset.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheet.css\"><link rel=\"stylesheet\" type=\"text/css\" href=\"style_sheets/myStyleSheetGallery.css\"><link href=\"https://fonts.googleapis.com/css?family=Abril+Fatface\" rel=\"stylesheet\"><script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js\"></script><script src=\"/js/parallax.js-1.4.2/parallax.min.js\"></script>"
+        script = "<script src=\"js/lightbox-plus-jquery.js\"></script>"
         template_vars = {
             'style': style,
             'script': script,

@@ -1,86 +1,194 @@
 {% extends "base.html" %}
 {% block content %}
-	<div class="moduleTitle">
-		<h1>Mobile App: Beauty Organizer (Ongoing)</h1>
-	</div>
-	<div class="table">
-		<div class="cellProblem">
+	<section class="projectintro margintop" style="background-color: #E45D80;">
+		<h1 style="color: white;">Mobile App: Beauty Keep</h1>
+	</section>
+<!-- 		<div class="cellProblem">
 			<h5>The Problem</h5>
-			<p class="problem">How can we help people build a digital record of their makeup products and leverage this data?</p>
-			<p>	This mobile app solves the problems caused by not being able to track one’s makeup products, such as buying duplicate products and not fully utilizing a product, and provides an enjoyable way to look at one’s makeup collection.  </p>
+			<p class="problem">How can we help visitors better enjoy a Buddhist art exhibit?</p>
+			<p>	The Smithsonian Museum is seeking for an interactive app that enhances the visiting experience and attracts more visitors to their upcoming Buddhism-themed exhibition, Hyecho’s Journey. With insights from our research, we dropped the conventional digital catalog approach, and are aiming to create a game-like product that motivates users to explore the robust content. </p>
 		</div>
 		<div class="cellList">
 			<ul>
 				<li><span> Role </span> 
-					<p>Product designer</p>
+					<p>UX & UI designer</p>
 				</li>
 				<li><span> Methods </span> 
-					<p>Interviewing / Competitive Analysis / Sketching / Storyboarding</p>
+					<p>Interviewing / Survey Design / Sketching / Storyboarding</p>
 				</li>
 				<li><span> Tools </span> 
-					<p>Sketch</p>
+					<p>Sketch / Value Proposition Canvas</p>
 				</li>
 				<li><span> Team </span>
-					<p>Individual Project</p>
+					<p>Bailey Case / Elijah Sattler / Anders Boberg / Eric Yeh / Rebecca Henry / Sindhu Giri</p>
 				</li>
 				<li><span> Timeline </span> 
-				<p>January 2017 - May 2017</p>
+				<p>January 2017 - December 2017</p>
 				</li>
 			</ul>
 		</div>
-	</div>
+	</div> -->
 	<section class="paragraph">
-			<div>
-				<h3>Competitive Research</h3>
-				<p>
-					The idea quickly expanded to a digital organizer for all kinds of makeup products. I did some interviews with my girl friends and confirmed that there is a huge need for it. 
-					In order to learn from existing solutions, I conducted a competitive analysis of four existing products, where I found out a list of pain points in current solutions.
-				</p>
+			<h3>Overview</h3>
+			<p>This mobile app allows users to track their makeup products and quickly find the products that are suitable for them. It solves the problems caused by not being able to track one’s makeup products, such as buying duplicate products and not fully utilizing a product, and saves the time spent on hunting for the perfect product.</p>
+			<h3>Defining the problem</h3>
+			<h4>Competitive Analysis and User Interviews</h4>
+			<p>
+				I saw the problem of not being able to track the products I own, and conducted a competitive analysis of four existing products. I highlighted the problems in current solutions. I conducted 4 user interviews and created personas to give me a clear idea of users' needs.
+			</p>
+			<br>
 				<div class="himage">
+					<a href="images/competitiveAnalysis.png">
 					<img src="images/competitiveAnalysis.png" alt="Part of the competitive analysis table">
+					</a>
 				</div>
 				<div>
 					<ul>
-						<li class="listSubTitle">Weaknesses in Current Solutions
+						<li class="listSubTitle">Pain Points in Current Solutions
 							<ul class="listSubContent">
 								<li>Incomplete databases that miss many popular products</li>
 								<li>Database does not allow user input and is not up-to-date</li>
 								<li>For those that allow users to input product information, inputting process is very tedious</li>	
 								<li>Database not searchable or inefficient search feature</li>
 								<li>Cannot sort or filter products in a user-friendly way</li>
-								<li>Boring visual style</li>
 							</ul>
 						</li>
 					</ul>
 				</div>
 				<div class="clearfix"></div>
-				<p>
-					From the competitive research, I decide to solve the problems of incomplete product database and tedious user input process. The app will allow user input to keep the database up-to-date, and the process of inputting product information will be automated and streamlined. It should provide sorting and filtering features that meet users' needs, and should also be pleasant to look at. In further market research and user research, I look to find out whether it should generalize suggestions on purchasing and using different products based on user data.
-				</p>
+			</section>
+			<div class="projectintro">
+			<div class="responsive" style="width: 33%;">
+			  <div class="img"> 
+			    <a href="images/persona_Page_1.png" data-lightbox="persona">
+			      <img src="images/persona_Page_1.png" alt="persona1">
+			    </a>
+			  </div>
 			</div>
-			<div>
-				<h3>Personas</h3>
-				<p>After interviewing potential users, I created three expert personas and one anti persona to better empathize with users and keep the product on the right direction.</p>
-				<img class="dimage" src="images/persona1.png">
-				<img class="dimage" src="images/persona2.png">
-				<img class="dimage" src="images/persona3.png">
-				<img class="dimage" src="images/persona4.png">
-				<div class="clearfix"></div>
-				<p>Right now I am creating a journey map that describes the workflow of a typical user interacting with the app. The end product of this project will be a high-fidelity prototype. Stay tuned!</p>
+			<div class="responsive" style="width: 33%;">
+			<div class="img"> 
+			    <a href="images/persona_Page_2.png" data-lightbox="persona">
+			      <img src="images/persona_Page_2.png" alt="persona2">
+			    </a>
+			  </div>
 			</div>
-			<div>
-				<h3>The Original Concept</h3>
-				<p>
-					This idea was initially just about lipsticks. It originated from the moment I was frustrated about figuring our what lipstick colors I own. What brand do I own most? What colors I have not had? Which of my lipsticks I have not made good use of and should start using them? How to coordinate lip colors with the rest of my look? I have many questions, and I do not want to answer them with an Excel spreadsheet. Here is a more glamorous way to organize lipsticks.
-				</p>
-				<h4>*Video contains sound</h4>
-				<iframe class="video" src="https://www.youtube.com/embed/deESeVzFXlg" frameborder="0" allowfullscreen></iframe>
+			<div class="responsive" style="width: 33%;">
+			<div class="img"> 
+			    <a href="images/persona_Page_3.png" data-lightbox="persona">
+			      <img src="images/persona_Page_3.png" alt="persona3">
+			    </a>
+			  </div>
 			</div>
+			<div class="clearfix"></div>
+			</div>
+			<section class="paragraph">
+				<p>By interviewing users who have different knowledge about products, I found that users want to:</p>
+				<ul>
+				<li class="listSubTitle">
+				<ul class="listSubContent">
+					<li>A quick, easy way to input product information</li>
+					<li>Get meaningfu data from their collection</li>
+					<li>Powerful search, sort, and filter feature for products</li>	
+					<li>Share their thoughts about products and makeup looks</li>
+					<li>Get recommendations on what to purchase and how to use products</li>
+				</ul>
+				</li>
+				</ul>
+				<h3 class="center">Solution</h3>
+			</section>
+			<div class="table projectintro">
+				<div class="col-img width33">
+					<img src="images/scan.png" alt="scan product">
+				</div>
+				<div class="col-txt">
+					<h4>Scan Products to Add</h4>
+					<p>
+						Image recognition allows users to add products in a snap. Users scan labels or the product itself.
+					</p>
+				</div>
+			</div>
+				<div class="table projectintro">
+				<div class="col-txt">
+					<h4>View collection in a customizable the way </h4>
+					<p>
+						When viwing their own collection, users can view the summary cards at the top. They can also customize the order and content of these cards. They can search, sort, and filter products to quickly access the products they want to view.
+					</p>
+				</div>
+				<div class="col-img width33">
+					<img src="images/products.png" alt="products">
+				</div>
+			</div>
+			<div class="table projectintro">
+				<div class="col-img width33">
+					<img src="images/lookbook.png" alt="looks">
+				</div>
+				<div class="col-txt">
+					<h4>Share makeup looks and get inspired</h4>
+					<p>
+						Users can share photos of their makeup looks and link the products used. They will be able to see related looks for each product and get a vivid idea of the effect of the products.
+					</p>
+				</div>
+			</div>
+			<div class="table projectintro">
+				<div class="col-txt">
+					<h4>Intelligent notifications and recommendations</h4>
+					<p>
+						The friendly chatbot will notify users when they need to replace expired products, when they have not used some products in a while, or give users recommendations based on their preferences. The bot saves users time spent on researching products and analyzing their collection.
+					</p>
+				</div>
+				<div class="col-img width33">
+					<img src="images/chat.png" alt="chatbot">
+				</div>
+			</div>
+			<div class="projectintro width70" id="hifi">
+			<div class="responsive" style="width: 16.66%;">
+			  <div class="img"> 
+			    <a href="images/initial.png" data-lightbox="persona">
+			      <img src="images/initial.png" alt="persona1">
+			    </a>
+			  </div>
+			</div>
+			<div class="responsive" style="width: 16.66%;">
+			  <div class="img"> 
+			    <a href="images/addprofile.png" data-lightbox="persona">
+			      <img src="images/addprofile.png" alt="persona1">
+			    </a>
+			  </div>
+			</div>
+			<div class="responsive" style="width: 16.66%;">
+			  <div class="img"> 
+			    <a href="images/scan.png" data-lightbox="persona">
+			      <img src="images/scan.png" alt="persona1">
+			    </a>
+			  </div>
+			</div>
+			<div class="responsive" style="width: 16.66%;">
+			  <div class="img"> 
+			    <a href="images/products.png" data-lightbox="persona">
+			      <img src="images/products.png" alt="persona1">
+			    </a>
+			  </div>
+			</div>
+			<div class="responsive" style="width: 16.66%;">
+			  <div class="img"> 
+			    <a href="images/lookbook.png" data-lightbox="persona">
+			      <img src="images/lookbook.png" alt="persona1">
+			    </a>
+			  </div>
+			</div>
+			<div class="responsive" style="width: 16.66%;">
+			  <div class="img"> 
+			    <a href="images/chat.png" data-lightbox="persona">
+			      <img src="images/chat.png" alt="persona1">
+			    </a>
+			  </div>
+			  </div>
+			</div>
+			<section class="paragraph">
 			<div>
 			<a class="back" href="/SI501"><p>«&nbsp;Previous<br>Library Contextual Inquiry</p></a>
 			<a class="next" href="/SI622"><p>Next&nbsp;»<br>Usability Study: Gale Researcher</p></a>
 			</div>
 			<div class="clearfix"></div>
-		</section>
-
+			</section>
 {% endblock %}

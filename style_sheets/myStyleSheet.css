@@ -167,13 +167,13 @@ h2 {
 
 h3 {
 	font-size: 1em;
-	font-weight: bold;
+	font-weight: lighter;
 	color: black;
 	margin: 1.5em 0 1em;
 }
 
 h4 {
-	text-align: center;
+	text-align: left;
 	font-weight: bold;
 	margin: 1em 0;
 }
@@ -258,7 +258,7 @@ div.desc {
 	left: 0;
 	width: 100%;
 	height:100%;
-	font-size: 4em;
+	font-size: 2em;
 	background-color: #dc267f;
 	color: White;
 	padding-left: 10px;
@@ -431,6 +431,7 @@ footer p {
 }
 
 .back p, .next p{
+	margin: 20px;
 	font-size: 0.7em;
 	font-weight: bold;
 	color: #dc267f;
@@ -482,24 +483,6 @@ img.icon {
 	width: 30%;
 	height: 30%;
 /*	margin: 1.5em;*/
-}
-
-li.listSubTitle {
-	line-height: 1.5em;
-	font-weight: bold;
-	color: #dc267f;
-}
-
-ul.listSubContent li {
-	list-style: circle outside none;
-	display: list-item;
-	margin-left: 1.5em;
-	font-weight: normal;
-	color: #323232;
-}
-
-.listSubContent ul {
-	list-style-type: circle;
 }
 
 img.toolicon {
@@ -623,7 +606,6 @@ p.citation {
 
 .projectintro {
 	width: 100%;
-	background-color: #f0f0f0;
 }
 
 .projectintro p {
@@ -631,12 +613,36 @@ p.citation {
 	margin: auto;
 }
 
+li.listSubTitle {
+	line-height: 1.5em;
+	font-weight: bold;
+	color: #dc267f;
+}
+
+ul.listSubContent li {
+	list-style: circle outside none;
+	display: list-item;
+	margin-left: 1.5em;
+	font-weight: normal;
+	color: #323232;
+}
+
+.listSubContent ul {
+	list-style-type: circle;
+}
+
 .float {
 	float: left;
 	width: 25%;
 }
 
+h3.center {
+	text-align: center;
+	margin: 1.5em auto;
+}
+
 @media only screen and (min-width: 768px) {
+
 	header img {
 		width: 80px;
 		height: 80px;
@@ -687,6 +693,14 @@ p.citation {
 
 	h3 {
 		font-size: 2em;
+	}
+
+	h3.center {
+	text-align: center;
+}
+
+	h4 {
+		font-size: 1em;
 	}
 
 	.cimage {
@@ -817,7 +831,7 @@ p.citation {
 	}
 
 	.paragraph {
-		width: 700px;
+		width: 750px;
 		padding: 0px 40px 0;
 		background-size: cover;
 /*		border-top: 2px solid #e2e2e2;*/
@@ -869,13 +883,13 @@ p.citation {
 
 	h1{
 		font-weight: bold;
-		font-size: 2.5em;
+		font-size: 3em;
 	}
 
 	.projectintro {
 /*		height: 550px;*/
-		padding-top: 80px;
-		padding-bottom: 80px;
+		padding-top: 100px;
+		padding-bottom: 100px;
 	}
 
 	.margintop{
@@ -905,6 +919,40 @@ p.citation {
 		width: 70%;
 		margin: auto;
 	}
+
+	.projectintro {
+		width: 100%;
+	}
+
+	.whitetext {
+		color: black;
+	}
+
+	.col-img {
+		display: table-cell;
+		width: 33%;
+		text-align: center;
+	}
+
+	.col-txt {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 40px;
+	}
+
+	.col-img img {
+		width: 70%;
+	}
+
+	.back p, .next p{
+		margin-top: 50px;
+	}
+
+	.width70 {
+		width: 70%;
+		margin: auto;
+	}
+
 }
 
 @media only screen and (min-width: 1170px){

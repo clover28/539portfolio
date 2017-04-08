@@ -60,7 +60,10 @@ Main Components
 /*  border-bottom: 2px solid #111111;*/
   position: relative;
   min-height: 100vh;
+  width:70%;
+  margin: auto; 
 }
+
 .cd-main-content:after {
   content: "";
   display: table;
@@ -308,7 +311,7 @@ xgallery
     transition: width 0.3s;
   }
   .cd-gallery li {
-    width: 23%;
+    width: 32%;
   }
   .cd-gallery.filter-is-visible {
     /* reduce width when filter is visible */
